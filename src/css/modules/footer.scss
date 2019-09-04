@@ -1,0 +1,150 @@
+.footer {
+    background-color: $footerColor;
+    padding: 30px 0 15px 0;
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+
+        .info {
+            display: flex;
+            width: 330px;
+
+            .logo {
+                border: none;
+                margin-right: 20px;
+            }
+
+            .contacts {
+                a, 
+                span {
+                    color: $primaryColor;
+                    font-size: 15px;
+                }
+
+                .telephone {
+                    border: none;
+                    font-family: "PancettaProMedium";
+                    font-size: 24px;
+                }
+
+                .address {
+                    display: block;
+                    margin-top: 5px;
+                }
+            }
+        }
+
+        .footer-navigation {
+            margin-left: auto;
+
+            ul {
+                display: flex;
+
+                li {
+                    margin-right: 50px;
+                    max-width: 195px;
+                    padding: 0;
+                    width: 100%;
+
+                    a {
+                        border-color: $primaryColor;
+                        color: $primaryColor;
+                        display: inline;
+                        font-size: 15px;
+                        line-height: 20px;
+
+                        &:hover {
+                            border-color: transparent;
+                        }
+                    }
+
+                    &:last-of-type {
+                        margin-right: 0;
+                    }
+
+                    &::before {
+                        content: initial;
+                    }
+                }
+            }
+        }
+
+        .footer-bottom {
+            align-items: center;
+            border-top: 1px solid #163F5B;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+            padding-top: 10px;
+            width: 100%;
+
+            .copyright {
+                color: #CFD3D5;
+                font-size: 13px;
+            }
+
+            .social-network {
+                display: flex;
+
+                .social__item {
+                    border: 2px solid rgba($color: $defaultColor, $alpha: 0.2);
+                    border-radius: 100%;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: 16px;
+                    height: 36px;
+                    margin-right: 6px;
+                    position: relative;
+                    width: 36px;
+
+                    .ico {
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: 16px;
+                        display: inline-block;
+                        height: 100%;
+                        left: 0;
+                        position: absolute;
+                        top: 0;
+                        width: 100%;
+                    
+                        &--vk {
+                            background-image: url(../images/icons/vk--white.svg);
+                        }
+                    
+                        &--fb {
+                            background-image: url(../images/icons/facebook--white.svg);
+                            background-size: 7px 14px;
+                        }
+                    
+                        &--inst {
+                            background-image: url(../images/icons/inst--white.svg);
+                        }
+                    
+                        &--youtube {
+                            background-image: url(../images/icons/youtube--white.svg);
+                        }
+                    }
+
+                    &:last-of-type {
+                        margin-right: 0;
+                    }
+                }
+            }
+
+            .alkon {
+                align-items: center;
+                border: none;
+                color: #CFD3D5;
+                display: flex;
+                font-size: 13px;
+
+                svg {
+                    margin-bottom: 3px;
+                    margin-right: 6px;
+                }
+            }
+        }
+    }
+}

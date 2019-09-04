@@ -1,0 +1,78 @@
+.vacancy {
+    background-color: $primaryColor;
+    border-radius: 0;
+    margin: 0;
+    padding: 5px;
+
+    &__item {
+        background-color: $defaultColor;
+        padding: 0;
+
+        .header {
+            .heading {
+                color: $neutralPrimary;
+                font-family: "PancettaProMedium";
+                user-select: none;
+                margin: 0;
+            }
+
+            i {
+                background-image: url(../images/icons/chevron-up--white.svg);
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                display: block;
+                height: 26px;
+                margin-left: auto;
+                transform: rotate(180deg);
+                width: 26px;
+            }
+        }
+
+        &.acc_section {
+            border: none;
+            border-radius: 0;
+            margin: 0 0 5px 0;
+            padding: 0;
+
+            .acc_head {
+                align-items: center;
+                background: initial;
+                border: none;
+                border-radius: 0;
+                cursor: pointer;
+                display: flex;
+                padding: 17px 25px;
+            }
+            
+            .acc_content {
+                background-color: $primaryColor;
+                border-radius: 0;
+                padding: 20px 25px;
+
+                p {
+                    margin: 5px 0;
+                }
+            }
+            
+            &.acc_active {
+                .acc_head {
+                    background: none;
+                    border: none;
+    
+                    i {
+                        transform: rotate(0);
+                    }
+                }
+            }
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+
+        &::before {
+            content: initial;
+        }
+    }
+}

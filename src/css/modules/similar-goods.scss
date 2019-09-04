@@ -1,0 +1,83 @@
+.similar-goods {
+    margin-top: 30px;
+
+    .top {
+        align-items: center;
+        display: flex;
+
+        .slider-arrow-wrapper {
+            margin-left: auto;
+
+            .slider-arrow {
+                svg {
+                    path {
+                        stroke: $blueColor;
+                    }
+                }
+            }
+        }
+    }
+
+    .slider {
+        margin-top: 30px;
+    }
+
+    &__item {
+        border: 5px solid $primaryColor;
+        height: auto;
+        padding: 20px;
+        position: relative;
+
+        .mark {
+            border-radius: 1px;
+            color: $defaultColor;
+            display: block;
+            font-size: 10px;
+            font-weight: bold;
+            left: 10px;
+            letter-spacing: 0.02em;
+            padding: 6px;
+            position: absolute;
+            text-transform: uppercase;
+            top: 10px;
+
+            &.special-price {
+                background-color: $successColor;
+            }
+            &.new {
+                background-color: $warningColor;
+            }
+        }
+
+        .image {
+            align-items: center;
+            display: flex;
+            height: 200px;
+            margin-bottom: 10px;
+            overflow: hidden;
+            padding: 12px;
+            justify-content: center;
+            vertical-align: middle;
+
+            img {
+                display: inline-block;
+                max-width: 100%;
+            }
+        }
+
+        .heading {
+            border-bottom: 2px solid $borderBase;
+            color: $neutralPrimary;
+            display: inline;
+            font-family: "PancettaProBold";
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+
+        .description {
+            color: $neutralPrimaryLighter;
+            font-size: 12px;
+            margin: 5px 0 0 0;
+        }
+    }
+}

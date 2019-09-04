@@ -1,0 +1,179 @@
+.catalogue__item-inner {
+    position: relative;
+
+    .mark {
+        border-radius: 1px;
+        color: $defaultColor;
+        display: block;
+        font-size: 10px;
+        font-weight: 700;
+        left: 25px;
+        letter-spacing: .02em;
+        padding: 6px;
+        position: absolute;
+        text-transform: uppercase;
+        top: 25px;
+        z-index: 1;
+
+        &.special-price {
+            background-color: $successColor;
+        }
+
+        &.new {
+            background-color: $warningColor;
+        }
+    }
+
+    .product-card {
+        border: 5px solid $primaryColor;
+        padding: 30px;
+
+        .images {
+            display: flex;
+            flex-direction: column;
+            padding-right: 30px;
+
+            .slider {
+                &-top {
+                    height: 100%;
+                    margin-bottom: 10px;
+
+                    .slide {
+                        a {
+                            align-items: center;
+                            border: none;
+                            display: flex;
+                            height: 100%;
+                            justify-content: center;
+                            outline: none;
+                            text-align: center;
+
+                            img {
+                                max-width: 300px;
+                            }
+                        }
+                    }
+
+                    div {
+                        height: 100%;
+                    }
+                }
+
+                &-nav {
+                    margin-top: auto;
+
+                    .slick-track {
+                        margin-left: initial;
+                        margin-right: initial;
+                    }
+
+                    .thumb {
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        border: 1px solid transparent;
+                        height: 68px;
+                        position: relative;
+                        width: 100%;
+                    }
+
+                    .slick-slide {
+                        margin-right: 5px;
+
+                        &.slick-current {
+                            .thumb {
+                                border-color: $blueColor;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .info {
+            .characteristicks {
+                dl {
+                    dt,
+                    dd {
+                        font-size: 14px;
+                    }
+                    
+                    &:first-of-type {
+                        margin-top: 0;
+                    }
+                }
+            }
+
+            .options {
+                align-items: center;
+                display: flex;
+
+                .option {
+                    margin-right: 20px;
+
+                    .qty-wrapper {
+                        align-items: center;
+                        display: flex;
+
+                        .qty-button {
+                            background-color: $borderLighter;
+                            border: 2px solid $borderLighter;
+                            border-radius: 2px 0px 0px 2px;
+                            cursor: pointer;
+                            color: $checkboxCheckedColor;
+                            font-size: 20px;
+                            line-height: 36px;
+                            margin: 0;
+                            padding: 0;
+                            text-align: center;
+                            width: 36px;
+                        }
+                    }
+
+                    span {
+                        font-size: 14px;
+                        display: block;
+                        margin-bottom: 13px;
+                    }
+
+                    select,
+                    input {
+                        background-color: $primaryColor;
+                        border: 2px solid $borderLighter;
+                        display: block;
+                        font-size: 16px;
+                        font-weight: bold;
+                    }
+
+                    select {
+                        border-radius: 2px;
+                        padding: 9px 15px;
+                        width: 100px;
+                    }
+
+                    input {
+                        padding: 9px 0;
+                        text-align: center;
+                        width: 58px;
+                    }
+                }
+            }
+
+            .button-wrapper {
+                margin-top: 25px;
+
+                .button {
+                    margin-right: 10px;
+
+                    &.fast-order {
+                        background: $successColor;
+                    }
+
+                    &:last-of-type {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+}

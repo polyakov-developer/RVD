@@ -1,0 +1,122 @@
+.convertor {
+    align-items: baseline;
+    border: 5px solid $primaryColor;
+    border-top: none;
+    display: flex;
+    padding: 25px;
+
+    &__heading {
+        align-items: center;
+        display: flex;
+        font-family: "PancettaProBold";
+        font-size: 16px;
+        margin-right: 46px;
+        text-transform: uppercase;
+        width: 33.3333%;
+
+        svg {
+            margin-right: 20px;
+        }
+    }
+
+    .col {
+        margin-top: 10px;
+        padding: 0;
+        width: 33.3333%;
+
+        input {
+            color: #626D75;
+            font-size: 16px;
+            padding: 12px;
+            width: 100%;
+        }
+
+        select {
+            background-color: #f8f9f9;
+            border: 2px solid #ecedee;
+            color: #626D75;
+            display: block;
+            font-size: 16px;
+            font-weight: 700;
+            margin-top: 10px;
+            width: 100%;
+        }
+
+        .selectric {
+            align-items: center;
+            background: none;
+            border: none;
+            display: flex;
+            margin-top: 10px;
+
+            .label {
+                color: $blueColor;
+                font-size: 16px;
+                font-weight: 700;
+                height: auto;
+                line-height: normal;
+                margin: 0;
+                padding: 0;
+            }
+
+            .button {
+                background-image: url(../images/icons/chevron-down--blue.svg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                color: transparent;
+                height: 10px;
+                line-height: normal;
+                user-select: none;
+                margin: 0 0 0 5px;
+                padding: 0;
+                position: relative;
+                width: 10px;
+
+                &::after {
+                    content: initial;
+                }
+            }
+        }
+
+        .selectric-items {
+            background-color: #f8f9f9;
+            border: 2px solid #ecedee;
+            margin-top: 5px;
+
+            .selectric-scroll {
+                ul {
+                    li {
+                        background: none;
+                        color: $neutralRegular;
+                        font-size: 14px;
+                        font-weight: 700;
+                        height: auto;
+                        line-height: normal;
+                        margin: 0 0 5px 0;
+
+                        &.selected {
+                            opacity: 0.5;
+                        }
+
+                        &::before {
+                            content: initial;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .divider {
+        background-color: $borderLighter;
+        border-radius: 100%;
+        flex: none;
+        height: 32px;
+        line-height: 32px;
+        margin: 0 10px;
+        user-select: none;
+        text-align: center;
+        width: 32px;
+    }
+}

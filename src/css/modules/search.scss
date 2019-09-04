@@ -1,0 +1,65 @@
+.breadcrumbs {
+    form {
+        align-items: center;
+        display: flex;
+        margin-top: 36px;
+        
+        input {
+            background-color: initial;
+            border: none;
+            border-bottom: 2px solid #415665;
+            color: #70808C;
+            margin-right: 20px;
+            padding-bottom: 13px;
+            width: 500px;
+        }
+
+        .button {
+            font-size: 14px;
+            padding: 14px 17px;
+            width: auto;
+        }
+    }
+}
+
+.search {
+    .marker {
+        color: $blueColor;
+    }
+
+    .results {
+        &__item {
+            align-items: baseline;
+            border-bottom: 2px solid #ECEDEE;
+            display: flex;
+            padding: 20px 0;
+
+            .num {
+                color: $neutralPrimary;
+                display: block;
+                font-family: "PancettaProMedium";
+                font-size: 16px;
+                margin-right: 5px;
+            }
+
+            .text {
+                margin: 0;
+
+                .heading {
+                    border-bottom: 2px solid #CFD3D5;
+                    font-family: "PancettaProBold";
+                    font-size: 16px;
+                    color: $neutralPrimary;
+                    text-transform: uppercase;
+                }
+
+                .description {
+                    color: $neutralPrimaryLighter;
+                    display: block;
+                    font-size: 12px;
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+}

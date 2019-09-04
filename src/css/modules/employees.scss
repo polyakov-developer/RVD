@@ -1,0 +1,32 @@
+.employees {
+    &__item {
+        display: flex;
+        margin-bottom: 30px;
+
+        .photo {
+            border-radius: 100%;
+            height: 80px;
+            margin-right: 20px;
+            overflow: hidden;
+            width: 80px;
+
+            img {
+                width: 80px;
+            }
+        }
+        .info {
+            .name {
+                color: $neutralPrimary;
+                font-family: "PancettaProMedium";
+                margin: 0;
+            }
+            .role {
+                color: $neutralRegular;
+                font-size: 14px;
+            }
+            .contacts {
+                margin-top: 10px;
+            }
+        }
+    }
+}

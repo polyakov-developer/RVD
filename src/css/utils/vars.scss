@@ -1,0 +1,47 @@
+// Font
+$mainFont              : 'Arial', sans-serif;
+$mainFontColor         : #424242;
+$mainFontSize          : 18px;
+$mainFontWeight        : 400;
+$mainLineHeight        : 1.45;
+
+// Display Size
+$desktopWidth          : 1220px;
+$smDesktopWidth        : 1150px;
+$tableWidth            : 1024px;
+$smTableWidth          : 768px;
+$phoneWidth            : 480px;
+$smPhoneWidth          : 320px;
+
+// Main Color
+$defaultColor          : #FFFFFF;
+$primaryColor          : #F8F9F9;
+$blueColor             : #0867AD;
+$blueColorDarker       : #065C9C;
+$placehoderColor       : #818A90;
+$infoColor             : #E5EFF6;
+$successColor          : #8CC043;
+$dangerColor           : #CD6871;
+$warningColor          : #E07F40;
+$breadcrumbsColor      : #162D3E;
+$footerColor           : #012E4E;
+
+// Gradient Color
+$grayGradient          : linear-gradient(1.12deg, #F9F9F9 -9.9%, #DCDCDC 111.67%);
+$blueGradient          : linear-gradient(1.12deg, #4F95C6 -9.9%, #065C9C 111.67%);
+$blueDarkerGradient    : linear-gradient(90deg, #0867AD 0%, #045088 100%);
+
+// Neutral Color
+$neutralPrimary        : #374046;
+$neutralPrimaryLighter : #666666;
+$neutralRegular        : #626D75;
+
+// Border Color
+$borderBase            : #CFD3D5;
+$borderLight           : #EBEEF5;
+$borderLighter         : #ECEDEE;
+$borderLink            : #A7CAE2;
+
+// Checkbox
+$checkboxColor         : #DEE0E2;
+$checkboxCheckedColor  : #626D75;

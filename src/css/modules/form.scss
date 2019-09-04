@@ -1,0 +1,184 @@
+.form {
+    .heading {
+        margin: 0 0 25px 0;
+    }
+
+    .fields-wrapper {
+        margin-bottom: 20px;
+
+        input,
+        textarea {
+            background-color: $primaryColor;
+            border: 3px solid $borderLighter;
+            color: $placehoderColor;
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            padding: 15px;
+            transition: all .25s ease-in-out;
+            width: 100%;
+
+            &.invalid {
+                border-color: $dangerColor;
+                box-shadow: 0px 0px 10px rgba($color: $dangerColor, $alpha: 0.5);
+                transition: all .25s ease-in-out;
+            }
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+
+        textarea {
+            height: 100%;
+            resize: none;
+        }
+    }
+
+    .error-msg {
+        background-color: #F5E1E3;
+        color: #CD6871;
+        display: none;
+        font-size: 14px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        text-align: center;
+        padding: 10px 0;
+        width: 100%;
+
+        &--visible {
+            display: block;
+        }
+    }
+
+    .form-bottom {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+
+        .button-wrapper {
+            margin-left: auto;
+        }
+    }
+
+    &.form-fullsize {
+        width: 100%;
+    }
+
+    &.form-short {
+        .fields-wrapper {
+            input,
+            textarea {
+                margin-bottom: 20px;
+
+                &:last-of-type {
+                    margin-bottom: 20px;
+                }
+            }
+
+            textarea {
+                height: 190px;
+
+                &:last-of-type {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .form-bottom {
+            display: block;
+
+            .button-wrapper {
+                margin-top: 30px;
+            }
+        }
+    }
+
+    &.form-popup {
+        background: $defaultColor;
+        margin: 70px auto 30px auto;
+        max-width: 380px;
+        padding: 40px;
+        position: relative;
+        width: 100%;
+
+        .fields-wrapper {
+            input {
+                &:last-of-type {
+                    margin-bottom: 20px;
+                }
+            }
+
+            textarea {
+                height: 120px;
+                margin-bottom: 0;
+            }
+        }
+
+        .form-bottom {
+            .terms-and-conditions {
+                line-height: normal;
+
+                &::before {
+                    top: 3px;
+                }
+            }
+
+            .button-wrapper {
+                margin: 25px 0 0 0;
+                width: 100%;
+            }
+        }
+
+        .form-close {
+            background-color: transparent;
+            background-image: url(../images/icons/close--white.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 12px;
+            border: 2px solid $defaultColor;
+            border-radius: 100%;
+            cursor: pointer;
+            height: 50px;
+            opacity: 1;
+            padding: 0;
+            right: -53px;
+            top: -53px;
+            width: 50px;
+            z-index: 3;
+        }
+
+        .success-message {
+            align-items: center;
+            background-color: $defaultColor;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            left: 0;
+            justify-content: center;
+            visibility: hidden;
+            opacity: 0;
+            padding: 40px;
+            position: absolute;
+            top: 0;
+            transition: opacity .35s,visibility .35s;
+            width: 100%;
+            z-index: 2;
+
+            svg {
+                margin-bottom: 32px;
+                width: 120px;
+            }
+
+            p {
+                text-align: center;
+            }
+
+            &--visible {
+                opacity: 1;
+                visibility: visible;
+                transition: opacity .35s,visibility .35s;
+            }
+        }
+    }
+}

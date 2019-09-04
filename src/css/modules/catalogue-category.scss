@@ -1,0 +1,39 @@
+.catalogue-category {
+    &__item {
+        margin-bottom: 20px;
+
+        &-content {
+            border: 5px solid $primaryColor;
+            height: 100%;
+            padding: 20px;
+            position: relative;
+    
+            .image {
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                // background-size: auto;
+                height: 170px;
+            }
+
+            .heading-wrapper {
+                margin-top: 20px;
+                
+                .heading {
+                    border-bottom: 2px solid $borderBase;
+                    color: $neutralPrimary;
+                    display: inline;
+                    font-family: "PancettaProBold";
+                    font-size: 16px;
+                    text-transform: uppercase;
+                }
+            }
+
+            .description {
+                color: $neutralPrimaryLighter;
+                font-size: 13px;
+                margin: 10px 0 0 0;
+            }
+        }
+    }
+}
